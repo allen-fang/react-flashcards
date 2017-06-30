@@ -13,8 +13,12 @@ class HomePage extends Component {
 		return this.state.topics.map((topic) => (
 			<li
 				key={topic}
-				className="btn btn-primary">
-				{topic}
+			>
+				<Link
+				 	className="btn btn-primary"
+					to={`/${topic}`}>
+					{topic}
+				</Link>
 			</li>
 		))
 	}

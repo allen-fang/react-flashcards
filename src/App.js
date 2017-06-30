@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
-
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import HomePage from './containers/HomePage/HomePage';
+import TopicPage from './containers/TopicPage/TopicPage'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <HomePage />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Switch>
+            <Route path="/:topic" component={TopicPage} />
+            <Route path="/" component={HomePage} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
