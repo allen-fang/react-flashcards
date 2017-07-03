@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import HomePage from './containers/HomePage/HomePage';
-import TopicPage from './containers/TopicPage/TopicPage';
+import HomePage from './components/HomePage/HomePage';
+import TopicPage from './components/TopicPage/TopicPage';
 
 class App extends Component {
   render() {
