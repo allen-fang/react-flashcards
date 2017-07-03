@@ -7,7 +7,7 @@ class HomePage extends Component {
 		super(props);
 		this.state = {
 			topics: ['JavaScript', 'Python', 'iOS', 'Behavioral', 'Web Development', 'Databases']
-		}
+		};
 	}
 	renderTopics() {
 		return this.state.topics.map((topic) => (
@@ -15,12 +15,12 @@ class HomePage extends Component {
 				key={topic}
 			>
 				<Link
-				 	className="btn btn-primary"
+				 	className="topic btn btn-primary"
 					to={`/${topic}`}>
 					{topic}
 				</Link>
 			</li>
-		))
+		));
 	}
 	render() {
 		return(
@@ -33,7 +33,7 @@ class HomePage extends Component {
 					</ul>
 				</div>
 			</div>
-		)
+		);
 	}
 }
 
