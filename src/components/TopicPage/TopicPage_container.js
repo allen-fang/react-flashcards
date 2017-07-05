@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
-import { fetchTopic } from '../../actions';
+import { fetchTopic, deleteCard } from '../../actions';
 import './TopicPage.css';
 
 class TopicPage extends Component {
   componentDidMount(){
     this.props.fetchTopic(this.props.match.params.topic);
+  }
+
+  onDeleteClick= (e) => {
+    this.props.deleteCard(e.target.value, () => {
+      return;
+    })
   }
 
   renderCards(){
@@ -16,6 +22,7 @@ class TopicPage extends Component {
         <tr key={topic._id}>
           <td>{topic.question}</td>
           <td>{topic.answer}</td>
+          <td><button value={topic._id} className="btn btn-danger" onClick={this.onDeleteClick}>delete</button></td>
         </tr>
       );
     });
@@ -65,4 +72,4 @@ function mapStateToProps(state){
   };
 }
 
-export default connect(mapStateToProps, { fetchTopic })(TopicPage);
+export default connect(mapStateToProps, { fetchTopic, deleteCard })(TopicPage);

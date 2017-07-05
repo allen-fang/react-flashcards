@@ -1,4 +1,4 @@
-import {FETCH_TOPIC} from '../actions';
+import {FETCH_TOPIC, DELETE_CARD} from '../actions';
 import _ from 'lodash';
 
 export default function (state = {}, action){
@@ -6,6 +6,8 @@ export default function (state = {}, action){
       case FETCH_TOPIC:
         console.log(action.payload.data);
         return _.mapKeys(action.payload.data, "_id");
+      case DELETE_CARD:
+      	return _.omit(state, action.payload);
       default:
         return state;
     }
