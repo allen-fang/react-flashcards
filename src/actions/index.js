@@ -1,4 +1,5 @@
-import axios from 'axios';
+// import axios from 'axios';
+var axios = require('axios');
 
 export const FETCH_TOPIC = 'fetch_topic';
 export const CREATE_CARD = 'create_card';
