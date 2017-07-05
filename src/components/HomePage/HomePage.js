@@ -6,7 +6,7 @@ class HomePage extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			topics: ['javascript', 'python', 'ios', 'behavioral', 'web development', 'databases']
+			topics: ['javascript', 'python', 'ios', 'behavioral', 'web', 'databases']
 		};
 	}
 	renderTopics() {
@@ -16,7 +16,7 @@ class HomePage extends Component {
 			>
 				<Link
 				 	className="topic btn btn-primary"
-					to={`/${topic}`}>
+					to={`/topics/${topic}`}>
 					{topic}
 				</Link>
 			</li>
@@ -32,6 +32,7 @@ class HomePage extends Component {
 						{this.renderTopics()}
 					</ul>
 				</div>
+				<Link to="/new" className="btn btn-primary">Add New Question</Link>
 			</div>
 		);
 	}

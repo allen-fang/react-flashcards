@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import TopicPage from './components/TopicPage/TopicPage_container';
-import NewCard from './components/NewCard/NewCard';
+import NewCard from './components/NewCard/NewCardForm';
 import ShowQuestion from './components/QuestionPage/Question_show';
 
 class App extends Component {
@@ -11,9 +11,9 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Switch>
-            <Route path ="/new" component={NewCard} />
-            <Route path="/:topic/:id" component={ShowQuestion} />
-            <Route path="/:topic" component={TopicPage} />
+            <Route path="/new" component={NewCard} />
+            <Route path="/topics/:topic/:id" component={ShowQuestion} />
+            <Route path="/topics/:topic" component={TopicPage} />
             <Route path="/" component={HomePage} />
           </Switch>
         </div>
