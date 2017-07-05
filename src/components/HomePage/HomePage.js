@@ -6,7 +6,7 @@ class HomePage extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			topics: ['JavaScript', 'Python', 'iOS', 'Behavioral', 'Web Development', 'Databases']
+			topics: ['javascript', 'python', 'ios', 'behavioral', 'web development', 'databases']
 		};
 	}
 	renderTopics() {
