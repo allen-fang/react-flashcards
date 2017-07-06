@@ -8,6 +8,7 @@ class Card extends Component {
 		return (
 			<div className="card">
 				<p>Question: {card.question}</p>
+				{this.props.show && <p>Answer: {card.answer}</p>}
 			</div>
 		)
 	}

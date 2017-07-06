@@ -2,3 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.quiz-header {
+	display: flex;
+	justify-content: space-between;
+	alignment-baseline: auto;
+	margin-top: 10px;
+}

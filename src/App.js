@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="container">
           <Switch>
             <Route path="/new" component={NewCard} />
             <Route path="/topics/:topic/quiz" component={Quiz} />
