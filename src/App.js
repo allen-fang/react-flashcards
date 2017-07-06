@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import TopicPage from './components/TopicPage/TopicPage_container';
 import NewCard from './components/NewCard/NewCardForm';
-import ShowQuestion from './components/QuestionPage/Question_show';
 import Quiz from './components/Quiz/Quiz';
 
 class App extends Component {
