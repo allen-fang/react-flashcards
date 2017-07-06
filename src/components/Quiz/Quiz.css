@@ -1,0 +1,4 @@
+.navBtns {
+	display: flex;
+	justify-content: space-between;
+}

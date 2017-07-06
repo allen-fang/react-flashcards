@@ -4,6 +4,7 @@ import HomePage from './components/HomePage/HomePage';
 import TopicPage from './components/TopicPage/TopicPage_container';
 import NewCard from './components/NewCard/NewCardForm';
 import ShowQuestion from './components/QuestionPage/Question_show';
+import Quiz from './components/Quiz/Quiz';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <div>
           <Switch>
             <Route path="/new" component={NewCard} />
+            <Route path="/topics/:topic/quiz" component={Quiz} />
             <Route path="/topics/:topic/:id" component={ShowQuestion} />
             <Route path="/topics/:topic" component={TopicPage} />
             <Route path="/" component={HomePage} />

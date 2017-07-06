@@ -32,8 +32,8 @@ class TopicPage extends Component {
     return(
       <div>
         <h2 className="center">{this.props.match.params.topic} questions</h2>
-        <button className="btn btn-primary">Quiz Me</button>
         <div className="btn-group">
+          <Link to={`/topics/${this.props.match.params.topic}/quiz`} className="btn btn-primary">Quiz Me</Link>
           <Link to="/" className="btn btn-danger">Go Back</Link>
         </div>
        
