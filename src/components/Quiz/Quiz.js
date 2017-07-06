@@ -62,8 +62,6 @@ class Quiz extends Component {
 		)
 	}
 	render() {
-		console.log("printing props of quiz", this.props);
-		console.log("printing state of quiz", this.state);
 		if (this.state.cards == null) {
 			return <div>Loading...</div>;
 		}
