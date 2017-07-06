@@ -88,7 +88,7 @@ function validate(values) {
 
   //validate the inputs from 'values'
   if (!values.name) {
-    errors.name = "Please select a title!";
+    errors.name = "Please select a Topic!";
   }
 
   if(!values.question){
