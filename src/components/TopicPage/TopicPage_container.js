@@ -28,28 +28,34 @@ class TopicPage extends Component {
     });
   }
 
-  renderQuestions(){
-    return _.map(this.props.topics, topic => {
-      return(
-        <div key={topic._id}>
-          <Link to={`/${this.props.match.params.topic}/${topic.id}`}>
-          {topic.name} questions
-          </Link>
-        </div>
-      );
-    });
-  }
+  // renderQuestions(){
+  //   return _.map(this.props.topics, topic => {
+  //     return(
+  //       <div key={topic._id}>
+  //         <Link to={`/${this.props.match.params.topic}/${topic.id}`}>
+  //         {topic.name} questions
+  //         </Link>
+  //       </div>
+  //     );
+  //   });
+  // }
 
   render(){
     console.log(this.props.topics[1]);
     return(
       <div>
-       <h2 className="center">topics page</h2>
-       <div id="navbar" className="col-lg-3 col-md-3">
-         {this.renderQuestions()}
-       </div>
-       <div id="questiontable" className="col-lg-9 col-md-9">
-         <table>
+        <h2 className="center">{this.props.match.params.topic} questions</h2>
+          {/*<div id="navbar" className="col-lg-3 col-md-3">
+            {this.renderQuestions()}
+          </div>*/}
+       
+        <button className="btn btn-primary">Quiz Me</button>
+        <div className="btn-group">
+          <Link to="/" className="btn btn-danger">Go Back</Link>
+        </div>
+       
+       <div id="questiontable" className="col-lg-12 col-md-12">
+         <table className="table">
            <thead>
               <tr>
                <th>Question</th>

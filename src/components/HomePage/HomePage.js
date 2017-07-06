@@ -31,8 +31,8 @@ class HomePage extends Component {
 					<ul>
 						{this.renderTopics()}
 					</ul>
+					<Link to="/new" className="btn btn-primary">Add New Question</Link>
 				</div>
-				<Link to="/new" className="btn btn-primary">Add New Question</Link>
 			</div>
 		);
 	}

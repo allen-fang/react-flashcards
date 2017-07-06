@@ -18,7 +18,7 @@ li {
 	width: 30%;
 }
 
-a {
+li > a {
 	width: 100%;
 	padding: 10px;
 }
