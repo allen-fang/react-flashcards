@@ -13,7 +13,6 @@ class App extends Component {
           <Switch>
             <Route path="/new" component={NewCard} />
             <Route path="/topics/:topic/quiz" component={Quiz} />
-            <Route path="/topics/:topic/:id" component={ShowQuestion} />
             <Route path="/topics/:topic" component={TopicPage} />
             <Route path="/" component={HomePage} />
           </Switch>
