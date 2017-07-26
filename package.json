@@ -2,6 +2,7 @@
   "name": "react-flashcards",
   "version": "0.1.0",
   "private": true,
+  "homepage": "react-flashcards.allenfang.com",
   "dependencies": {
     "axios": "^0.16.2",
     "lodash": "^4.17.4",
