@@ -4,6 +4,10 @@
 	align-items: center;
 }
 
+body {
+	padding: 50px;
+}
+
 h1 {
 	margin-bottom: 30px;
 }
@@ -28,4 +32,8 @@ ul {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	list-style-type: none;
+}
+
+.add-btn {
+	margin-left: 55px;
 }
